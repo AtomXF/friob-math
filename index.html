@@ -1,17 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Laurent Friob">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Top navbar example · Bootstrap</title>
+    <title>Mathématique · Friob</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/navbar-static/">
-
+<!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/navbar-static/"> -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
     <!-- Bootstrap core CSS -->
-<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -25,6 +29,32 @@
 
 
     <style>
+
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+      .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+      a.mylink:link {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a.mylink:visited {
+        color: rgb(41, 44, 255);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a.mylink:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a.mylink:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      /* .fa-chalkboard-teacher,.fa-coffee {font-size:200px} */
+
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -41,40 +71,97 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="navbar-top.css" rel="stylesheet">
+    <!-- <link href="navbar-top.css" rel="stylesheet"> -->
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-  <a class="navbar-brand" href="#">Top navbar</a>
+  <a class="navbar-brand" href="https://www.lyceedachsbeck.be">Lycée Dachsbeck</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="ressources.html">Ressources <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">4</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Cours</a>
+          <a class="dropdown-item" href="#">Corrigés</a>
+          <a class="dropdown-item" href="#">Compléments</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline mt-2 mt-md-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
 <main role="main" class="container">
   <div class="jumbotron">
-    <h1>Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/4.4/components/navbar/" role="button">View navbar docs &raquo;</a>
+    <h1>Mathématique - M. Friob</h1>
+    <p class="lead">Toutes les informations et outils mis à disposition des élèves sont accessibles à partir de cette page.
+      A commencer par Geogebra pour t'assister dans la résolution et l'investigation de nombreux problèmes.</p>
+    <a class="btn btn-lg btn-primary" href="https://www.geogebra.org" target="_blank" role="button">Geogebra &raquo;</a>
   </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="col-md-4">
+          <i class="fas fa-chalkboard-teacher fa-5x w3-padding-32 w3-text-blue"></i>
+          <h2>Teams</h2>
+        </div>
+        <p>Suis ces liens pour accèder à tes notes de cours tout au long de l'année. En classe, chez toi ou depuis n'importe où grace à ton compte élève @stu.brucity.education</p>
+        <ul>
+          <li>Teams <a class="mylink" href="https://teams.microsoft.com/l/channel/19%3a8eb44e37f8e648e8ad744569055cdbf4%40thread.skype/G%25C3%25A9n%25C3%25A9ral?groupId=81534cdb-d86e-48c9-8649-a7051606498c&tenantId=bd6a3cb8-c4b8-4aa6-998e-2fad5737002c">6 SC</a></li>
+          <li>Teams <a class="mylink" href="https://teams.microsoft.com/l/channel/19%3aedf8bb12a006450ab6ba536d109ed730%40thread.skype/G%25C3%25A9n%25C3%25A9ral?groupId=cd41c2b9-11b6-48a7-87db-c568820deba1&tenantId=bd6a3cb8-c4b8-4aa6-998e-2fad5737002c">6 LS - LG</a></li>
+          <li>Teams <a class="mylink" href="#">4 SH</a></li>
+        </ul>
+        <p><a class="btn btn-secondary" href="https://www.office.com/?omkt=fr-be" role="button">Office 365 &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-4">
+          <i class="fas fa-user-graduate fa-5x w3-padding-32 w3-text-blue"></i>
+          <h2>Khan Academy</h2>
+        </div>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-secondary" href="https://fr.khanacademy.org/" role="button">Khan Academy &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-4">
+          <i class="fas fa-award fa-5x w3-padding-32 w3-text-blue"></i>
+          <h2>Olympiades</h2>
+        </div>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="http://omb.sbpm.be/" role="button">Olympiades &raquo;</a></p>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
+
 </main>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/l/fr-fr/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+ </div>
+ <p style="font-size:1.3em;">La science est un outil puissant. L’usage qu’on en fait dépend de l’homme, pas de l’outil. <i>Albert Einstein</i></p>
+ <p>Powered by <a href="https://www.github.com" target="_blank">GitHub</a></p>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
 </html>
