@@ -1,138 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<title>Mathématique - Friob</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Laurent Friob">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Mathématique · Friob</title>
+
+<!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/navbar-static/"> -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-a.mylink:link {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-a.mylink:visited {
-  color: rgb(179, 0, 0);
-  background-color: transparent;
-  text-decoration: none;
-}
-a.mylink:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a.mylink:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-/* .fa-chalkboard-teacher,.fa-coffee {font-size:200px} */
-</style>
-<body>
+    <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://www.lyceedachsbeck.be" class="w3-bar-item w3-button w3-padding-large w3-white">Lycée Dachsbeck</a>
-    <a href="ressources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ressources</a>
-    <a href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EtiKpcWamTVPq8RLUI9--XQB9KLaRyphGiF5O3inakF6sQ?e=2b9YG7" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">4</a>
-    <a href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/Eks8-2Vz129DteDRAvRMoVUBs4dz2up_xMLEu0FDHZhv_w?e=4vxfAd" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">5</a>
-    <a href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EoHOAMnmwvpGiK1XeV0qNqQB80vFZ5FIB4pVclNEkCZSaA?e=lMG5UF" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">6</a>
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+      .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+      a.mylink:link {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a.mylink:visited {
+        color: rgb(255, 41, 41);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a.mylink:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a.mylink:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      /* .fa-chalkboard-teacher,.fa-coffee {font-size:200px} */
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- <link href="navbar-top.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <a class="navbar-brand" href="https://www.lyceedachsbeck.be">Lycée Dachsbeck</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">4</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/Eit2eUmiBxhOlTCBqnybcKoBe0UOWlXTzoLm_p9mq0DJmw?e=TX2W1i">Cours</a>
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/Eg-ZM4WbOn5BjvhnlhynAb4ByZ_Pm7M4DklygVYWhbJKmg?e=bEQJir">Corrigés</a>
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EvnUc7eSQA9KoIM42dZ_U4IBzFG7yzyelQXg99IzOoewYw?e=s3uwUi">Compléments</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">5</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/Eqe_w0SuAGxMgo4HcauJfEYBTneP_QJkABecdS6oPcDAHQ?e=yfuVaf">Cours</a>
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EmLtJlVZEtNAn-IZ9OsdcnUBxSXsrnzrNcN7zEnX-Sewyg?e=FX0AlW">Corrigés</a>
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EvnUc7eSQA9KoIM42dZ_U4IBzFG7yzyelQXg99IzOoewYw?e=s3uwUi">Compléments</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">6</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EipQWepkWghOk4WvvOm2GqQBJjS4s7KIII_VTze0wH4zQg?e=JRo9od">Cours</a>
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EqQ_ygyvi49NruoMCvD8iikB-AFL_VLiEtW2SajNNqB2AA?e=snFvp9">Corrigés</a>
+          <a class="dropdown-item" href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EvnUc7eSQA9KoIM42dZ_U4IBzFG7yzyelQXg99IzOoewYw?e=s3uwUi">Compléments</a>
+        </div>
+      </li>
+  </div>
+</nav>
+
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>Sites Internet</h1>
+    <p class="lead">Quelques sites pour t'aider dans la compréhension des mathématiques. Utiles aussi pour de la remédiation ou du dépassement.</p>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="ressources.html" class="w3-bar-item w3-button w3-padding-large">Ressources</a>
-    <a href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EtiKpcWamTVPq8RLUI9--XQB9KLaRyphGiF5O3inakF6sQ?e=2b9YG7" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" class="w3-bar-item w3-button w3-padding-large">4</a>
-    <a href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/Eks8-2Vz129DteDRAvRMoVUBs4dz2up_xMLEu0FDHZhv_w?e=4vxfAd" class="w3-bar-item w3-button w3-padding-large">5</a>
-    <a href="https://brucityeducation-my.sharepoint.com/:f:/g/personal/laurent_friob_brucity_education1/EoHOAMnmwvpGiK1XeV0qNqQB80vFZ5FIB4pVclNEkCZSaA?e=lMG5UF" class="w3-bar-item w3-button w3-padding-large">6</a>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Mathématique</h1>
-  <p class="w3-xlarge">Cours de M. Friob</p>
-  <a href="https://www.geogebra.org/materials/yours"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Geogebra</button></a>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Notes de cours partagées sur Teams</h1>
-      <h5 class="w3-padding-32">Suis ces liens pour accèder à tes notes de cours tout au long de l'année. En classe, chez toi ou depuis n'importe où grace à ton compte élève @stu.brucity.education</h5>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
       <ul>
-        <li>Teams <a class="mylink" href="https://teams.microsoft.com/l/channel/19%3a8eb44e37f8e648e8ad744569055cdbf4%40thread.skype/G%25C3%25A9n%25C3%25A9ral?groupId=81534cdb-d86e-48c9-8649-a7051606498c&tenantId=bd6a3cb8-c4b8-4aa6-998e-2fad5737002c">6 SC</a></li>
-        <li>Teams <a class="mylink" href="https://teams.microsoft.com/l/channel/19%3aedf8bb12a006450ab6ba536d109ed730%40thread.skype/G%25C3%25A9n%25C3%25A9ral?groupId=cd41c2b9-11b6-48a7-87db-c568820deba1&tenantId=bd6a3cb8-c4b8-4aa6-998e-2fad5737002c">6 LS - LG</a></li>
-        <li>Teams <a class="mylink" href="#">4 SH</a></li>
+        <li><a class="mylink" href="https://fr.khanacademy.org/">Khan Academy</a></li>
+        <li><a class="mylink" href="https://www.maths-et-tiques.fr/">M@ths et tiques</a></li>
+        <li><a class="mylink" href="https://www.alloprof.qc.ca/bv/pages/m0000.aspx">Alloprof</a></li>
+        <li>Faire du dépassement <a class="mylink" href="https://maths-olympiques.fr/?page_id=11">cours de la préparation olympique</a></li>
       </ul>
     </div>
-
-    <div class="w3-third w3-center">
-      <i class="fas fa-chalkboard-teacher fa-9x w3-padding-64 w3-text-red"></i>
-    </div>
   </div>
-</div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fas fa-user-graduate fa-9x w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Khan academy</h1>
-      <h5 class="w3-padding-32">Des cours, exercices résolus, quizz... sont à disposition sur le site de la Khan academy. Conforme aux programmes belge pour l'enseignement des mathématiques.</h5>
+  <div class="jumbotron">
+    <h1>Outils numériques</h1>
+    <p class="lead">Quelques sites pour t'aider dans la compréhension des mathématiques. Utiles aussi pour de la remédiation ou du dépassement.</p>
+  </div>
+  
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
       <ul>
-        <li><p class="w3-text-grey">Pour le cours de <a class="mylink" href="https://fr.khanacademy.org/math/be-4eme-secondaire2">quatrième</a></p></li>
-        <li><p class="w3-text-grey">Pour le cours de <a class="mylink" href="https://fr.khanacademy.org/math/be-5eme-secondaire4h2">cinquième 4 h/semaine</a></p></li>
-        <li><p class="w3-text-grey">Pour le cours de <a class="mylink" href="https://fr.khanacademy.org/math/be-5eme-secondaire4h2">cinquième 6 h/semaine</a></p></li>
-        <li><p class="w3-text-grey">Pour le cours de <a class="mylink" href="https://fr.khanacademy.org/math/be-5eme-secondaire4h2">sixième 2 h/semaine</a></p></li>
-        <li><p class="w3-text-grey">Pour le cours de <a class="mylink" href="https://fr.khanacademy.org/math/be-5eme-secondaire4h2">sixième 4 h/semaine</a></p></li>
-        <li><p class="w3-text-grey">Pour le cours de <a class="mylink" href="https://fr.khanacademy.org/math/be-5eme-secondaire4h2">sixième 6 h/semaine</a></p></li>
-
+        <li><a class="mylink" href="https://www.geogebra.org/">Geogebra</a></li>
+        <li><a class="mylink" href="https://photomath.net/fr/">Photomath</a></li>
+        <li><a class="mylink" href="https://www.wolfram.com/mathematica/">Mathematica</a></li>
+        <li>Générer des exercices avec corrigés <a class="mylink" href="https://www.pyromaths.org/">Pyromath</a></li>
       </ul>
-      
     </div>
-  </div>
-</div>
+  </div> <!-- /container -->
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">La science est un outil puissant. L’usage qu’on en fait dépend de l’homme, pas de l’outil. <i>Albert Einstein</i></h1>
-</div>
+  <div class="jumbotron">
+    <h1>YouTube</h1>
+    <p class="lead">Parmi les très nombreux canaux disponibles sur YouTube voici des suggestions.</p>
+  </div>
+  
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <ul>
+        <li><a class="mylink" href="https://www.youtube.com/micmaths">Micmaths</a></li>
+        <li><a class="mylink" href="https://www.youtube.com/channel/UCaNlbnghtwlsGF-KzAFThqA">Science étonnante</a></li>
+        <li><a class="mylink" href="https://www.youtube.com/channel/UC7DdEm33SyaTDtWYGO2CwdA">Physics Girl</a></li>
+        <li><a class="mylink" href="https://www.youtube.com/user/1veritasium">Veritasium</a></li>
+        <li><a class="mylink" href="https://www.youtube.com/user/datagueule">Data Gueule</a></li>
+      </ul>
+    </div>
+  </div> <!-- /container -->
+
+  <div class="jumbotron">
+    <h1> Après CESS | Université</h1>
+    <p class="lead">Pour un aperçu de la science pratiquée après l'école.</p>
+  </div>
+  
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <ul>
+        <li><a class="mylink" href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3blue1brown</a></li>
+        <li><a class="mylink" href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg">Mathologer</a></li>
+        <li><a class="mylink" href="https://www.youtube.com/user/Computerphile">Computerphile</a></li>
+        <li>Plateforme pour les <i>White Hat hackers</i>  <a class="mylink" href="https://www.hackerone.com/">Hacker01</a></li>
+      </ul>
+    </div>
+  </div> <!-- /container -->
+
+</main>
+
+
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
   <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <a href="https://instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i></a>
     <a href="https://www.snapchat.com/l/fr-fr/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://www.twitter.com/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
  </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> & <a href="https://www.github.com">GitHub</a></p>
+ <p style="font-size:1.3em;">La science est un outil puissant. L’usage qu’on en fait dépend de l’homme, pas de l’outil. <i>Albert Einstein</i></p>
+ <p>Powered by <a href="https://www.github.com" target="_blank">GitHub</a></p>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
